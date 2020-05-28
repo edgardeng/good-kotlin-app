@@ -13,7 +13,7 @@
     - Language: Kotlin
 4. Finish . 等待AS 生产相应的目录和文件
 
-## 目录介绍
+### 目录介绍
 
 ```text
 |_ app (app模块 也是应用的主要代码)
@@ -33,7 +33,24 @@
 |_ gradle.properties (使用gradle时的配置)
 |_ settings.gradle (gradle项目的配置)
 
+```
 
 
+### 其他一些说明
 
+* _gradle在同步项目时，下载超时问题_
+
+替换根目录下build.gradle中的
+
+```
+  repositories {
+    jcenter()
+  }
+```   
+为
+
+```
+  repositories {
+    maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+  }
 ```
