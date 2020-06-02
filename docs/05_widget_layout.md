@@ -129,9 +129,17 @@ __Chain属性__
  * layout_constraintGuide_begin	以View的起始位置为参照物，水平或垂直方向上边界(dp)
  * layout_constraintGuide_end	以View的结束位置为参照物，水平或垂直方向上边界(dp)
  * layout_constraintGuide_percent 水平或垂直方向上的百分比(float ratio 0.0f - 1.0f)
- 
+
+### CoordinatorLayout 协调布局
+> androidx.coordinatorlayout.widget.CoordinatorLayout
+> 协调子控件的组件，可以解决绝大部分滑动联动问题
+
 ### Reference 参考
 
 * [ConstraintLayout 属性详解 和Chain的使用](https://www.jianshu.com/p/50debc330e91)
  
-* [androidx ConstraintLayout文档](https://developer.android.google.cn/reference/androidx/coordinatorlayout/widget/package-summary) 
+* [AndroidX CoordinatorLayout文档](https://developer.android.google.cn/reference/androidx/coordinatorlayout/widget/package-summary) 
+
+* [AndroidX ConstraintLayout文档](https://developer.android.google.cn/reference/androidx/constraintlayout/widget/ConstraintLayout)
+
+* [CoordinatorLayout的基本使用](https://www.jianshu.com/p/4cf2e99cf491)
