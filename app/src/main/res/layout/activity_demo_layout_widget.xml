@@ -10,7 +10,6 @@
     android:paddingRight="5dp"
     android:paddingBottom="5dp" >
 
-
     <TextView
         android:id="@+id/tv_user_label"
         android:layout_width="wrap_content"
@@ -327,36 +326,86 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="-7dp">
+        <!--    layout_constraintDimensionRatio    -->
+        <!--        <Button-->
+        <!--            android:id="@+id/button1"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_marginTop="8dp"-->
+        <!--            android:text="Button1"-->
+        <!--            app:layout_constraintDimensionRatio="16:6"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent" />-->
+        <!--    layout_constraintWidth_percent    -->
+        <!--        <Button-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:text="Button2"-->
+        <!--            app:layout_constraintWidth_percent="0.3"-->
+        <!--            app:layout_constraintWidth_default="percent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent" />-->
 
+        <!--        以下三个button测试 Chain属性-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/button16"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Button"-->
+        <!--            app:layout_constraintHorizontal_chainStyle="spread"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/button17"-->
+        <!--            app:layout_constraintStart_toStartOf="parent" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/button17"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Button"-->
+        <!--            app:layout_constraintEnd_toStartOf="@+id/button18"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/button16" />-->
+
+        <!--        <Button-->
+        <!--            android:id="@+id/button18"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Button"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/button17"/>-->
+
+        <!--        以下 测试 Guideline -->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Button"
-            app:layout_constraintEnd_toStartOf="@+id/button17"
-            app:layout_constraintVertical_chainStyle="packed"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="39dp" />
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/guideline2" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintEnd_toStartOf="@+id/button18"
-            app:layout_constraintStart_toEndOf="@+id/button16"
-            tools:layout_editor_absoluteY="39dp" />
-
-        <Button
-            android:id="@+id/button18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button17"
-            tools:layout_editor_absoluteY="39dp" />
+            android:layout_marginTop="16dp"
+            android:text="Button2"
+            app:layout_constraintBottom_toTopOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
