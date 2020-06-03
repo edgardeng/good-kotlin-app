@@ -19,7 +19,9 @@
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_home">MainActivity</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <string name="rank">排行榜</string>
+    <string name="movie">电影</string>
+    <string name="cinema">影院</string>
+    <string name="my">我的</string>
 </resources>

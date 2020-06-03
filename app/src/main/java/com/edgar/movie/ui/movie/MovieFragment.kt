@@ -1,4 +1,4 @@
-package com.edgar.movie.ui.dashboard
+package com.edgar.movie.ui.movie
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.edgar.movie.R
 
-class DashboardFragment : Fragment() {
+class MovieFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var movieViewModel: MovieViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-            ViewModelProviders.of(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
+        movieViewModel =
+            ViewModelProviders.of(this).get(MovieViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_rank, container, false)
         val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        movieViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

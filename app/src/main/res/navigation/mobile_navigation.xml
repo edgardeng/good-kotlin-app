@@ -3,23 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_movie">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.edgar.movie.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_movie"
+        android:name="com.edgar.movie.ui.movie.MovieFragment"
+        android:label="@string/movie"
+        tools:layout="@layout/fragment_movie" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.edgar.movie.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_rank"
+        android:name="com.edgar.movie.ui.rank.RankFragment"
+        android:label="@string/rank"
+        tools:layout="@layout/fragment_rank" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.edgar.movie.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_cinema"
+        android:name="com.edgar.movie.ui.cinema.CinemaFragment"
+        android:label="@string/cinema"
+        tools:layout="@layout/fragment_cinema" />
+    <fragment
+        android:id="@+id/navigation_my"
+        android:name="com.edgar.movie.ui.my.MyFragment"
+        android:label="@string/my"
+        tools:layout="@layout/fragment_my" />
 </navigation>
