@@ -24,4 +24,9 @@
     <string name="movie">电影</string>
     <string name="cinema">影院</string>
     <string name="my">我的</string>
+    <string name="message">消息</string>
+    <string name="content">contentcontentcontent\r\ncontentcontentcontentcontent\r\ncontentcontentcontentcontent</string>
+    <string name="setting">设置</string>
+
+
 </resources>

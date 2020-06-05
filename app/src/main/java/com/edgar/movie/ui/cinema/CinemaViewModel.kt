@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class CinemaViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is Cinema Fragment"
     }
     val text: LiveData<String> = _text
 }
