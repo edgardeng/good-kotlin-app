@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_movie">
+    app:startDestination="@id/navigation_movie">
 
     <fragment
         android:id="@+id/navigation_movie"
@@ -22,6 +22,7 @@
         android:name="com.edgar.movie.ui.cinema.CinemaFragment"
         android:label="@string/cinema"
         tools:layout="@layout/fragment_cinema" />
+
     <fragment
         android:id="@+id/navigation_my"
         android:name="com.edgar.movie.ui.my.MyFragment"

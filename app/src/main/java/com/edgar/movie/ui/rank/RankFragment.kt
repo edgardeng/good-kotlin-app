@@ -22,7 +22,7 @@ class RankFragment : Fragment() {
         rankViewModel =
             ViewModelProviders.of(this).get(RankViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_movie, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
+        val textView: TextView = root.findViewById(R.id.movie_text)
         rankViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })

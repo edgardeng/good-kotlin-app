@@ -154,8 +154,9 @@ __简单的配置__
 
 ### RecyclerView
 > androidx.recyclerview.widget.RecyclerView
-#### ToolBar
 
+
+#### ToolBar
 
 ### 3. Material Design下的控件
 
@@ -164,6 +165,9 @@ __简单的配置__
 #### BottomAppBar 底部栏
 #### NavigationView 导航栏
 #### BottomNavigationView 底部导航栏
+> com.google.android.material.bottomnavigation.BottomNavigationView
+
+
 #### TabLayout
 #### TabItem
 

@@ -21,8 +21,8 @@ class MovieFragment : Fragment() {
     ): View? {
         movieViewModel =
             ViewModelProviders.of(this).get(MovieViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_rank, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        val root = inflater.inflate(R.layout.fragment_movie, container, false)
+        val textView: TextView = root.findViewById(R.id.movie_text)
         movieViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
