@@ -12,17 +12,13 @@ import androidx.navigation.ui.setupWithNavController
 import com.edgar.movie.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
 class HomeActivity : AppCompatActivity() {
 
     var TAG = "HomeActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        setTheme(R.style.DarkAppTheme);
-
-
+//        setTheme(R.style.DarkAppTheme);
 
         val window: Window = window
         val decorView: View = window.decorView
