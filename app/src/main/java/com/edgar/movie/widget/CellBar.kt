@@ -11,9 +11,9 @@ import androidx.annotation.DrawableRes
 
 class CellBar : ConstraintLayout {
 
-    var iconView: ImageView? = null
-    var labelView: TextView? = null
-    var contentView: TextView? = null
+    private var iconView: ImageView? = null
+    private var labelView: TextView? = null
+    private var contentView: TextView? = null
 
     @DrawableRes
     var icon: Int = 0
@@ -34,16 +34,10 @@ class CellBar : ConstraintLayout {
             contentView?.text = value
         }
 
-
-
     constructor(context: Context) : this(context, null)
     constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        //init(context)要在retrieveAttributes(attrs)前调用
-        //因为属性赋值，会直接赋值到控件上去。如:
-        //调用label = ""时，相当于调用了label的set方法。
-        init(context)
-        //retrieveAttributes(attrs: AttributeSet)方法只接受非空参数
+       init(context)
         attrs?.let { retrieveAttributes(attrs) }
     }
 
@@ -54,19 +48,14 @@ class CellBar : ConstraintLayout {
         contentView = view.findViewById(R.id.cell_bar_text)
     }
 
-    fun retrieveAttributes(attrs: AttributeSet) {
+    private fun retrieveAttributes(attrs: AttributeSet) {
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.CellBar)
         val iconRes = typedArray.getResourceId(R.styleable.CellBar_icon, 0)
         if (iconRes != 0)
             icon = iconRes
         label = typedArray.getText(R.styleable.CellBar_label)
         text = typedArray.getText(R.styleable.CellBar_text)
-//        labelTextSize = typedArray.getFloat(R.styleable.JSCItemLayout_label_text_size, 14f)
-//        labelTextColor = typedArray.getColor(R.styleable.JSCItemLayout_label_text_color, 0xff333333.toInt())
-//        val v2 = typedArray.getResourceId(R.styleable.JSCItemLayout_arrow_icon, 0)
-//        if (v2 != 0)
-//            arrowIcon = v2
-//        typedArray.recycle()
+        typedArray.recycle()
     }
 
 }

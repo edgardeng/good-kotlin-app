@@ -6,8 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import com.edgar.movie.R
 
 class CinemaFragment : Fragment() {
@@ -19,13 +17,8 @@ class CinemaFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        viewModel =
-            ViewModelProviders.of(this).get(CinemaViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_cinema, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
-        viewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
+
         return root
     }
 }

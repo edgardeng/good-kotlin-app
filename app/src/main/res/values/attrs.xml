@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="MyCustomWidget">
-        <attr name="myText" format="string"/>
-        <attr name="fancyColors" format="boolean"/>
-        <attr name="onAction" format="string"/>
-    </declare-styleable>
-
     <declare-styleable name="CellBar">
         <attr name="icon" format="reference" />
         <attr name="label" format="string" />
         <attr name="text" format="string" />
-<!--        <attr name="label_text_size" format="float" />-->
-<!--        <attr name="label_text_color" format="color" />-->
-<!--        <attr name="arrow_icon" format="reference" />-->
     </declare-styleable>
 
+    <!--自定义控件属性-->
+    <declare-styleable name="GradientCardView">
+        <attr name="colorStart" format="reference" />
+        <attr name="colorEnd" format="reference" />
+        <attr name="round" format="dimension" />
+        <attr name="clickEffect" format="boolean" />
+        <attr name="colorPressStart" format="reference" />
+        <attr name="colorPressEnd" format="reference" />
+    </declare-styleable>
 
 </resources>

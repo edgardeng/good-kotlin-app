@@ -30,7 +30,6 @@
                 android:id="@+id/toolbar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:fitsSystemWindows="true"
                 android:background="@drawable/bg_main_my_header"
                 app:contentScrim="@color/colorPrimary"
                 app:statusBarScrim="@android:color/transparent"
@@ -95,8 +94,6 @@
                         app:layout_constraintEnd_toEndOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
                 <androidx.appcompat.widget.Toolbar
                     android:id="@+id/toolbar"

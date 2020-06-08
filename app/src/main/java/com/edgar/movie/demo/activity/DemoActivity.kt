@@ -27,4 +27,10 @@ class DemoActivity : AppCompatActivity() {
         startActivity(i)
     }
 
+    fun gotoDialog(view: View) {
+        var i = Intent(this, DemoDialogActivity::class.java)
+        startActivity(i)
+    }
+
+
 }

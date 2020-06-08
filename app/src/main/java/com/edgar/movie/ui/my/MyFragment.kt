@@ -9,25 +9,11 @@ import android.view.ViewGroup
 import androidx.core.widget.NestedScrollView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.navigation.findNavController
 import com.edgar.movie.R
 import com.edgar.movie.databinding.FragmentMyBinding
 import com.edgar.movie.ui.setting.SettingActivity
 
 class MyFragment : Fragment() {
-
-//    private lateinit var myViewModel: MyViewModel
-//
-//    override fun onCreateView(
-//        inflater: LayoutInflater,
-//        container: ViewGroup?,
-//        savedInstanceState: Bundle?
-//    ): View? {
-//        myViewModel = ViewModelProviders.of(this).get(MyViewModel::class.java)
-//        val root = inflater.inflate(R.layout.fragment_my, container, false)
-//
-//        return root
-//    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -39,25 +25,12 @@ class MyFragment : Fragment() {
         ).apply {
             viewModel = MyViewModel()
             lifecycleOwner = viewLifecycleOwner
-//            callback = object : Callback {
-//                override fun add(plant: Plant?) {
-//                    plant?.let {
-//                        hideAppBarFab(fab)
-//                        plantDetailViewModel.addPlantToGarden()
-//                        Snackbar.make(root, R.string.added_plant_to_garden, Snackbar.LENGTH_LONG)
-//                            .show()
-//                    }
-//                }
-//            }
-
             var isToolbarShown = false
-
+            Log.e("MyFrament", "setOnScrollChangeListener: ")
             // scroll change listener begins at Y = 0 when image is fully collapsed
             plantDetailScrollview.setOnScrollChangeListener(
                 NestedScrollView.OnScrollChangeListener { _, _, scrollY, _, _ ->
 
-                    // User scrolled past image to height of toolbar and the title text is
-                    // underneath the toolbar, so the toolbar should be shown.
                     val shouldShowToolbar = scrollY > toolbar.height
                     Log.e("MyFrament", "shouldShowToolbar: " + shouldShowToolbar.toString())
 

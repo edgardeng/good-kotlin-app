@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="40dp">
     <Button
         android:onClick="gotoBaseWidget"
         android:text="基本控件-展示类"
@@ -11,6 +12,11 @@
     <Button
         android:onClick="gotoContainerWidget"
         android:text="容器类控件"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="gotoDialog"
+        android:text="对话框示例"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 </LinearLayout>

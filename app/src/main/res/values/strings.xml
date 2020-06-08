@@ -28,5 +28,17 @@
     <string name="content">contentcontentcontent\r\ncontentcontentcontentcontent\r\ncontentcontentcontentcontent</string>
     <string name="setting">设置</string>
 
+    <string name="rank_week_title">每周五更新 10部</string>
+    <string name="rank_week_hint">一周口碑电影</string>
+    <string name="rank_top_title">每周五更新 10部</string>
+    <string name="rank_top_hint">一周口碑电影</string>
+    <string name="rank_new_title">每周五更新 10部</string>
+    <string name="rank_new_hint">一周口碑电影</string>
+    <string name="rank_us_title">每周五更新 10部</string>
+    <string name="rank_us_hint">一周口碑电影</string>
+
+    <string name="username">用户名</string>
+    <string name="password">密码</string>
+
 
 </resources>
