@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4fac2a</color>
-<!--    <color name="colorPrimary">#ffffff</color>-->
-    <color name="colorPrimaryDark">#327518</color>
-    <color name="colorAccent">#9266f9</color>
-    <color name="colorBackground">#f0f1f0</color>
-    <color name="darkColorBackground">#010F17</color>
+    <color name="primary">#4fac2a</color> <!-- Blue 700 -->
+    <color name="accent">#9266f9</color>
+    <color name="secondary">#327518</color> <!-- Orange 700 -->
+    <color name="error">#E53935</color> <!-- Red 600 -->
+    <color name="appBar">#FAFAFA</color>
+    <color name="background">#F0F8F0</color>
+
+
+
+    <color name="itemBackground">#fefefe</color>
+
+
     <color name="white">#fefefe</color>
     <color name="black">#010101</color>
+    <color name="orange">#FF9800</color>
+    <color name="pink">#E05785</color>
+
 
     <color name="rank1_color_start">#6e98e7</color>
     <color name="rank1_color_end">#90fee5</color>
@@ -17,5 +26,43 @@
     <color name="rank3_color_end">#f7cac9</color>
     <color name="rank4_color_start">#E674F9</color>
     <color name="rank4_color_end">#DD9B9B</color>
+
+    <color name="test_layout_bg">@android:color/white</color>
+    <color name="test_text">@android:color/black</color>
+    <color name="test_text_bg">#008577</color>
+
+
+
+    <!-- Original AppCompat attributes. -->
+<!--    <item name="colorPrimary">@color/my_app_primary_color</item>-->
+<!--    <item name="colorSecondary">@color/my_app_secondary_color</item>-->
+<!--    <item name="android:colorBackground">@color/my_app_background_color</item>-->
+<!--    <item name="colorError">@color/my_app_error_color</item>-->
+
+<!--    &lt;!&ndash; New MaterialComponents attributes. &ndash;&gt;-->
+<!--    <item name="colorPrimaryVariant">@color/my_app_primary_variant_color</item>-->
+<!--    <item name="colorSecondaryVariant">@color/my_app_secondary_variant_color</item>-->
+<!--    <item name="colorSurface">@color/my_app_surface_color</item>-->
+<!--    <item name="colorOnPrimary">@color/my_app_color_on_primary</item>-->
+<!--    <item name="colorOnSecondary">@color/my_app_color_on_secondary</item>-->
+<!--    <item name="colorOnBackground">@color/my_app_color_on_background</item>-->
+<!--    <item name="colorOnError">@color/my_app_color_on_error</item>-->
+<!--    <item name="colorOnSurface">@color/my_app_color_on_surface</item>-->
+<!--    <item name="scrimBackground">@color/mtrl_scrim_color</item>-->
+<!--    <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1</item>-->
+<!--    <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2</item>-->
+<!--    <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3</item>-->
+<!--    <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4</item>-->
+<!--    <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5</item>-->
+<!--    <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6</item>-->
+<!--    <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1</item>-->
+<!--    <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2</item>-->
+<!--    <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>-->
+<!--    <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>-->
+<!--    <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>-->
+<!--    <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>-->
+<!--    <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>-->
+
+
 
 </resources>

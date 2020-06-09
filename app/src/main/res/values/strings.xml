@@ -27,6 +27,11 @@
     <string name="message">消息</string>
     <string name="content">contentcontentcontent\r\ncontentcontentcontentcontent\r\ncontentcontentcontentcontent</string>
     <string name="setting">设置</string>
+    <string name="dark_mode">暗色模式</string>
+    <string name="dark_mode_yes">开启</string>
+    <string name="dark_mode_no">关闭</string>
+    <string name="dark_mode_default">跟随系统</string>
+
 
     <string name="rank_week_title">每周五更新 10部</string>
     <string name="rank_week_hint">一周口碑电影</string>

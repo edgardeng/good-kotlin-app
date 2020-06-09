@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable
-            name="darkMode"
-            type="String" />
+
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -25,7 +23,7 @@
                 android:background="@android:color/transparent"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                app:title="@string/setting"
+                app:title="@string/dark_mode"
                 app:navigationIcon="@drawable/ic__arrow_back"
                 app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
@@ -35,38 +33,35 @@
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <LinearLayout
+            <RadioGroup
+                android:id="@+id/rg_dark_mode"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <com.edgar.movie.widget.CellBar
+                <RadioButton
+                    android:id="@+id/rb_dark_mode_default"
+                    style="@style/radio_theme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:label="@string/dark_mode"
-                    app:text="@{darkMode}"
-                    android:onClick="gotoSettingsTheme" />
+                    android:text="@string/dark_mode_default"
+                    android:checked="true"/>
 
-                <com.edgar.movie.widget.CellBar
-                    android:layout_marginTop="1sp"
+                <RadioButton
+                    android:id="@+id/rb_dark_mode_yes"
+                    style="@style/radio_theme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:label="清除缓存"
-                    app:text="22.4M" />
+                    android:text="@string/dark_mode_yes" />
 
-                <com.edgar.movie.widget.CellBar
-                    android:layout_marginTop="1sp"
+                <RadioButton
+                    android:id="@+id/rb_dark_mode_no"
+                    style="@style/radio_theme"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:label="检查更新" />
+                    android:text="@string/dark_mode_no" />
+            </RadioGroup>
 
-                <com.edgar.movie.widget.CellBar
-                    android:layout_marginTop="1sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:label="关于我们"
-                    app:clickable="false" />
-            </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
 

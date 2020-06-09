@@ -4,6 +4,7 @@
         <attr name="icon" format="reference" />
         <attr name="label" format="string" />
         <attr name="text" format="string" />
+        <attr name="clickable" format="boolean" />
     </declare-styleable>
 
     <!--自定义控件属性-->

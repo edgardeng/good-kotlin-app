@@ -126,7 +126,8 @@
             android:id="@+id/rb_f"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="女" />
+            android:text="女"
+            android:checked="true"/>
 
         <RadioButton
             android:id="@+id/rb_m"
@@ -142,9 +143,6 @@
         android:layout_height="wrap_content"
         android:firstDayOfWeek="0"
         android:shownWeekCount="5"
-        android:selectedWeekBackgroundColor="@color/colorPrimaryDark"
-        android:focusedMonthDateColor="@color/colorAccent"
-        android:weekSeparatorLineColor="@color/colorPrimary"
         android:unfocusedMonthDateColor="#F9F"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rg_gender" />

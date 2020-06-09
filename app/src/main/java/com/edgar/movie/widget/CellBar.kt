@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.edgar.movie.R
 import android.util.AttributeSet
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.DrawableRes
@@ -14,7 +15,7 @@ class CellBar : ConstraintLayout {
     private var iconView: ImageView? = null
     private var labelView: TextView? = null
     private var contentView: TextView? = null
-
+    private var arrowView: ImageView? = null
     @DrawableRes
     var icon: Int = 0
         set(value) {
@@ -33,6 +34,11 @@ class CellBar : ConstraintLayout {
             field = value
             contentView?.text = value
         }
+    var clickable: Boolean? = true
+        set(value) {
+            field = value
+            arrowView?.visibility = if (value!!) View.VISIBLE else View.INVISIBLE
+        }
 
     constructor(context: Context) : this(context, null)
     constructor(context: Context, attrs: AttributeSet?) : this(context, attrs, 0)
@@ -46,6 +52,7 @@ class CellBar : ConstraintLayout {
         iconView = view.findViewById(R.id.cell_bar_icon)
         labelView = view.findViewById(R.id.cell_bar_label)
         contentView = view.findViewById(R.id.cell_bar_text)
+        arrowView = view.findViewById(R.id.cell_bar_go)
     }
 
     private fun retrieveAttributes(attrs: AttributeSet) {
@@ -55,6 +62,7 @@ class CellBar : ConstraintLayout {
             icon = iconRes
         label = typedArray.getText(R.styleable.CellBar_label)
         text = typedArray.getText(R.styleable.CellBar_text)
+        clickable = typedArray.getBoolean(R.styleable.CellBar_clickable, true)
         typedArray.recycle()
     }
 

@@ -63,12 +63,16 @@ class DemoFormWidgetActivity : AppCompatActivity() {
     }
     fun aRadioGroup() {
         var radioGroup = findViewById<RadioGroup>(R.id.rg_gender)
+        findViewById<RadioButton>(R.id.rb_f).isChecked = true
         radioGroup.setOnCheckedChangeListener(object: RadioGroup.OnCheckedChangeListener{
-            override fun onCheckedChanged(p0: RadioGroup?, viewId: Int) {
-                 when (viewId) {
+            override fun onCheckedChanged(group: RadioGroup?, viewId: Int) {
+                Log.e("SettingThemeActivity", "onCheckedChanged ${group?.checkedRadioButtonId} - $viewId")
+
+                when (viewId) {
                      R.id.rb_m -> Log.e("TAG", "radioGroup onCheckedChanged: Male")
                      R.id.rb_f -> {
-                         Log.e("TAG", "radioGroup onCheckedChanged: Female")
+                         val c = findViewById<RadioButton>(R.id.rb_f).isChecked
+                         Log.e("TAG", "radioGroup onCheckedChanged: Female, $c")
                      }
                  }
             }
