@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#0A2316</color>-->
+<!--&lt;!&ndash;    <color name="colorPrimary">#ffffff</color>&ndash;&gt;-->
+<!--    <color name="colorPrimaryDark">#0A1B04</color>-->
+<!--    <color name="colorAccent">#9266f9</color>-->
+<!--    <color name="colorBackground">#010F17</color>-->
+<!--    <color name="colorOnBackground">#A9B0B4</color>-->
+
+    <!-- app palette -->
+<!--    <color name="secondary">#FFCC80</color> &lt;!&ndash; Orange 200 &ndash;&gt;-->
+<!--    <color name="error">#Ef9A9A</color> &lt;!&ndash; Red 200 &ndash;&gt;-->
+<!--    <color name="appBar">#0E1812</color>-->
+<!--    <color name="background">#08170E</color>-->
+</resources>

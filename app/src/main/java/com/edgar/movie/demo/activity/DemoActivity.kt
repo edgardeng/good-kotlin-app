@@ -33,6 +33,10 @@ class DemoActivity : AppCompatActivity() {
         goTo(DemoThemeActivity::class.java)
     }
 
+    fun gotoViewPager(view: View) {
+        goTo(DemoViewPagerActivity::class.java)
+    }
+
     fun goTo(cls: Class<*>) {
         Log.e(TAG, "--- goTo: ${cls.name}")
         startActivity(Intent(this, cls))

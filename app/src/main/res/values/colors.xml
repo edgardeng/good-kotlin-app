@@ -6,12 +6,7 @@
     <color name="error">#E53935</color> <!-- Red 600 -->
     <color name="appBar">#FAFAFA</color>
     <color name="background">#F0F8F0</color>
-
-
-
     <color name="itemBackground">#fefefe</color>
-
-
     <color name="white">#fefefe</color>
     <color name="black">#010101</color>
     <color name="orange">#FF9800</color>

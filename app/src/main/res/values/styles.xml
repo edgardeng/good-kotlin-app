@@ -21,10 +21,10 @@
         <item name="colorSecondary">@color/secondary</item>
         <item name="android:colorBackground">@color/background</item>
 <!--        <item name="statusBarScrim">@color/error</item>-->
-        <item name="statusBarBackground">@color/orange</item>
+<!--        <item name="statusBarBackground">@color/orange</item>-->
 <!--        <item name="statusBarForeground">@color/white</item>-->
 <!--        <item name="android:windowTranslucentStatus">true</item>-->
-<!--        可行 -->
+        <!--    可行 -->
         <item name="android:statusBarColor">@color/primary</item>
     </style>
 

@@ -1,4 +1,5 @@
-## 使用BottomNavigationView底部导航栏创建首页
+## Use BottomNavigationView and Fragment to make home page
+> 使用BottomNavigationView底部导航栏 和fragment 碎片创建首页
 
 ### 一个简单的例子
 
