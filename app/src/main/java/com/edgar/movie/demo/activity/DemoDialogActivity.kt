@@ -6,6 +6,7 @@ import android.content.DialogInterface
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
@@ -14,7 +15,10 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.PopupMenu
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.edgar.movie.R
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.Snackbar
 import java.util.concurrent.ScheduledThreadPoolExecutor
 import java.util.concurrent.TimeUnit
@@ -28,6 +32,7 @@ class DemoDialogActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_demo_dialog)
+//        BottomSheetDialog
     }
 
     fun showAlertDialog(view: View) {
@@ -110,6 +115,17 @@ class DemoDialogActivity : AppCompatActivity() {
             })
             show()
         }
+    }
+
+    fun showBottomSheetDialog(view: View) {
+        val bottomSheetDialog = BottomSheetDialog(this)
+        val view = LayoutInflater.from(this).inflate(R.layout.v_demo_dialog_input, null);
+        bottomSheetDialog!!.setContentView(view)
+        val parent = view.parent as View
+        val params = parent.layoutParams as CoordinatorLayout.LayoutParams
+        params.gravity = Gravity.TOP or Gravity.CENTER_HORIZONTAL
+        parent.layoutParams = params
+        bottomSheetDialog!!.show()
     }
 
     private var progressBar: ProgressBar? = null
