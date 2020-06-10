@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/home_dest">
+
+    <fragment
+        android:id="@+id/home_dest"
+        android:name="com.edgar.movie.demo.activity.navigation.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/demo_fragment_navigation_main">
+
+        <!-- TODO STEP 7.1 - Add action with transitions -->
+        <!--<action-->
+            <!--android:id="@+id/next_action"-->
+            <!--app:destination="@+id/flow_step_one_dest"-->
+            <!--app:enterAnim="@anim/slide_in_right"-->
+            <!--app:exitAnim="@anim/slide_out_left"-->
+            <!--app:popEnterAnim="@anim/slide_in_left"-->
+            <!--app:popExitAnim="@anim/slide_out_right" />-->
+        <!-- TODO END STEP 7.1 -->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/flow_step_one_dest"
+        android:name="com.edgar.movie.demo.activity.navigation.FlowStepFragment"
+        tools:layout="@layout/demo_fragment_flow_step_one">
+        <argument
+            android:name="flowStepNumber"
+            app:argType="integer"
+            android:defaultValue="1"/>
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/flow_step_two_dest">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/flow_step_two_dest"
+        android:name="com.edgar.movie.demo.activity.navigation.FlowStepFragment"
+        tools:layout="@layout/demo_fragment_flow_step_two">
+
+        <argument
+            android:name="flowStepNumber"
+            app:argType="integer"
+            android:defaultValue="2"/>
+
+        <action
+            android:id="@+id/next_action"
+            app:popUpTo="@id/home_dest">
+        </action>
+    </fragment>
+
+    <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->
+    <fragment
+        android:id="@+id/settings_dest"
+        android:name="com.edgar.movie.demo.activity.navigation.SettingsFragment"
+        android:label="settings"
+        tools:layout="@layout/demo_fragment_settings" />
+    <!-- TODO END STEP 4 -->
+
+    <fragment
+        android:id="@+id/deeplink_dest"
+        android:name="com.edgar.movie.demo.activity.navigation.DeepLinkFragment"
+        android:label="deeplink"
+        tools:layout="@layout/demo_fragment_deep_link">
+
+        <argument
+            android:name="myarg"
+            android:defaultValue="Android!"/>
+        <!-- TODO STEP 11.1 - Add a deep link to www.example.com/{myarg}/ -->
+
+        <deepLink app:uri="www.example.com/{myarg}" />
+
+        <!-- TODO END STEP 11.1 -->
+    </fragment>
+</navigation>

@@ -42,6 +42,7 @@
             android:configChanges="uiMode"/>
 
         <activity android:name=".demo.activity.DemoViewPagerActivity" />
+        <activity android:name=".demo.activity.navigation.DemoNavigationActivity" />
     </application>
 
 </manifest>

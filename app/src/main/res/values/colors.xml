@@ -5,7 +5,10 @@
     <color name="secondary">#327518</color> <!-- Orange 700 -->
     <color name="error">#E53935</color> <!-- Red 600 -->
     <color name="appBar">#FAFAFA</color>
+    <!-- activity背景色 -->
     <color name="background">#F0F8F0</color>
+    <!-- 基本字体 -->
+    <color name="text">#0A090A</color>
     <color name="itemBackground">#fefefe</color>
     <color name="white">#fefefe</color>
     <color name="black">#010101</color>

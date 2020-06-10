@@ -59,5 +59,11 @@
             android:onClick="gotoViewPager"
             android:text="ViewPager2示例" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gotoNavigation"
+            android:text="导航组件示例" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

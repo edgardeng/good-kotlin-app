@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.edgar.movie.demo.activity.navigation.DemoNavigationActivity
 
 class DemoActivity : AppCompatActivity() {
     val TAG = "DemoActivity"
@@ -36,6 +37,11 @@ class DemoActivity : AppCompatActivity() {
     fun gotoViewPager(view: View) {
         goTo(DemoViewPagerActivity::class.java)
     }
+
+    fun gotoNavigation(view: View) {
+        goTo(DemoNavigationActivity::class.java)
+    }
+
 
     fun goTo(cls: Class<*>) {
         Log.e(TAG, "--- goTo: ${cls.name}")
