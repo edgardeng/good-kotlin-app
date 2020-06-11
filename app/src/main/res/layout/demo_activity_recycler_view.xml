@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/linear_layout_rb">
+        <RadioButton android:id="@+id/linear_layout_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="linear_layout_manager"/>
+        <RadioButton android:id="@+id/grid_layout_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="grid_layout_manager"/>
+    </RadioGroup>
+
+<!--    // 用SwipeRefreshLayout包裹RecyclerView-->
+<!--    <SwipeRefreshLayout-->
+<!--        android:id="@+id/gank_swipe_refresh_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    </SwipeRefreshLayout>-->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_refresh_layout">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

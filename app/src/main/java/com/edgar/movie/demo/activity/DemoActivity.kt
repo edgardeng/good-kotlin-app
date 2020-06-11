@@ -41,7 +41,9 @@ class DemoActivity : AppCompatActivity() {
     fun gotoNavigation(view: View) {
         goTo(DemoNavigationActivity::class.java)
     }
-
+    fun gotoRecyclerView(view: View) {
+        goTo(DemoRecyclerViewActivity::class.java)
+    }
 
     fun goTo(cls: Class<*>) {
         Log.e(TAG, "--- goTo: ${cls.name}")

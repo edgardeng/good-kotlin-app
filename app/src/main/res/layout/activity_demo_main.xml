@@ -65,5 +65,13 @@
             android:onClick="gotoNavigation"
             android:text="导航组件示例" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gotoRecyclerView"
+            android:text="RecyclerView示例" />
+
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

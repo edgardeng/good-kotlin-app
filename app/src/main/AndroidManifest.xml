@@ -43,6 +43,7 @@
 
         <activity android:name=".demo.activity.DemoViewPagerActivity" />
         <activity android:name=".demo.activity.navigation.DemoNavigationActivity" />
+        <activity android:name=".demo.activity.DemoRecyclerViewActivity" />
     </application>
 
 </manifest>

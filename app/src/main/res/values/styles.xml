@@ -1,21 +1,20 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
-        <!-- Customize your theme here. -->
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light"> -->
 <!--        <item name="colorPrimary">@color/colorPrimary</item>-->
 <!--        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
 <!--        <item name="colorAccent">@color/colorAccent</item>-->
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        <item name="statusBarBackground">@android:color/transparent</item>
-        <item name="statusBarScrim">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-<!--        <item name="android:colorBackground">@color/colorBackground</item>-->
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
+<!--        <item name="android:windowTranslucentStatus">true</item>-->
+<!--        <item name="android:windowTranslucentNavigation">true</item>-->
+<!--        <item name="statusBarBackground">@android:color/transparent</item>-->
+<!--        <item name="statusBarScrim">@android:color/transparent</item>-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+<!--&lt;!&ndash;        <item name="android:colorBackground">@color/colorBackground</item>&ndash;&gt;-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
 
-    <style name="DemoApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="DemoApp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorAccent">@color/accent</item>
         <item name="colorSecondary">@color/secondary</item>
@@ -43,14 +42,6 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
-    <style name="DarkThemeApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary</item>
-        <item name="colorSecondary">@color/secondary</item>
-        <item name="colorError">@color/error</item>
-        <item name="android:textColor">?attr/colorOnBackground</item>
-    </style>
-
     <style name="radio_theme" >
         <item name="android:padding">16dp</item>
 <!--        <item name="android:background">@color/white</item>-->
@@ -58,6 +49,5 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-
 
 </resources>
